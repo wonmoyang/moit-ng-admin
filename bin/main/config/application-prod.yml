@@ -1,0 +1,17 @@
+server:
+    port: 7070
+
+spring:
+    profiles:
+        active: prod
+        
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: false
+            
+    jackson:
+        serialization.indent_output: true
+            
+application:

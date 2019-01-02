@@ -1,0 +1,20 @@
+spring:
+    application:
+        name: VaultAPI
+    profiles:
+        active: dev
+    jackson:
+      serialization.write-dates-as-timestamps: false
+        
+server:
+    session:
+        cookie:
+            http-only: true
+
+application:
+    query:
+        match_all_fields: 
+            title, body, attach.realname, attach.content, 
+            from.name.shampoo, from.ko_name, from.en_name, from.cn_name, from.jp_name,
+            sendto.name.shampoo, sendto.ko_name, sendto.en_name, sendto.cn_name, sendto.jp_name,
+            cc.name.shampoo, cc.ko_name, cc.en_name, cc.cn_name, cc.jp_name
