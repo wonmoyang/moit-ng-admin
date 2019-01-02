@@ -23,3 +23,11 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+
+# Angular Dependencies
+/node_modules
+
+# Angular Compiled Output
+/dist
+/tmp
+/out-tsc
