@@ -1,0 +1,30 @@
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<script type="text/javascript">
+	    $.post({
+	        type : 'POST',
+	        async: false,
+	        contentType : 'application/json',
+	        url : 'http://localhost:8080/api/login',
+	        data : JSON.stringify({
+	            "userName" : '123',
+	            "password" : '421'
+	        }),
+	        success : function(result) {
+	        	console.log(result)
+	        },
+	        error: function(request, status, error) {
+	        	console.log(request)
+	        }
+	    }) // End Ajax Request
+	
+	</script>
+</body>
+</html>
